@@ -5,7 +5,7 @@
   // echo count($fruits);
 
   // Search array (same like js .includes())
-  var_dump(in_array('apple', $fruits));
+  // var_dump(in_array('apple', $fruits));
 
   //Add to array
   //Normal add
@@ -70,9 +70,15 @@
   // print_r($newNumbers);
 
 
-  $lessThan10 = array_filter($numbers, fn($number)=>$number<10);
+  $lessThan10 = array_filter($numbers, fn($number)=>$number<=10);
 
-  print_r($lessThan10);
+  // print_r($lessThan10);
+
+  //------REDUCE
+
+  $sum = array_reduce($numbers, fn($a, $b)=> $a+$b,0);
+
+var_dump($sum)
 
 
 
