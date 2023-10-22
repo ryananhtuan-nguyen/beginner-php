@@ -44,7 +44,37 @@
   $b = ['avocado', 'apple', 'banana'];
   //combine: make object from 2 arrays
   $c = array_combine($a, $b);
-  print_r($c)
+  // print_r($c);
+
+  $keys=array_keys($c);
+
+  // print_r($keys);
+
+  //---------flipping keys & values
+  $flipped = array_flip($c);
+
+  // print_r($flipped);
+
+
+
+  $numbers = range(1,20);
+
+  // print_r($numbers);
+
+
+  //array.map in js 
+  $newNumbers = array_map(function($number){
+    return "Number {$number}";
+  },$numbers);
+
+  // print_r($newNumbers);
+
+
+  $lessThan10 = array_filter($numbers, fn($number)=>$number<10);
+
+  print_r($lessThan10);
+
+
 
 
    
