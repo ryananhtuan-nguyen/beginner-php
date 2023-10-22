@@ -78,7 +78,7 @@
 
   $sum = array_reduce($numbers, fn($a, $b)=> $a+$b,0);
 
-var_dump($sum)
+  // var_dump($sum)
 
 
 
